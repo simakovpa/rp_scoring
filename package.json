@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://simakovpa.github.io/scoring-prototype/",
+  "homepage": "https://simakovpa.github.io/rp_scoring/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
