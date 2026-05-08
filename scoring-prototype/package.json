@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "homepage": "https://YOUR_USERNAME.github.io/scoring-prototype/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
