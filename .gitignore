@@ -1,34 +1,17 @@
 ```
+# Build artifacts
+dist/
+build/
+*.js
+
 # Dependencies
 node_modules/
+
+# Editors
+.vscode/
 
 # Environment
 .env
 .env.local
-.env.*
-
-# Logs
-*.log
-
-# Temporary files
-*.tmp
-*.swp
-
-# Editors
-.vscode/
-.idea/
-
-# Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Build outputs
-build/
-*.egg-info/
-
-# OS
-.DS_Store
-Thumbs.db
+*.env.*
 ```
