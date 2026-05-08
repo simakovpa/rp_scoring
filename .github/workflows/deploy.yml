@@ -28,20 +28,18 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
-          cache-dependency-path: scoring-prototype/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: ./scoring-prototype
 
       - name: Build
         run: npm run build
-        working-directory: ./scoring-prototype
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./scoring-prototype/dist
+          path: ./dist
 
   deploy:
     environment:
