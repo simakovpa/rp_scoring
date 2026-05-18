@@ -172,7 +172,7 @@ const App = () => {
       dataIndex: 'weighted', 
       key: 'weighted', 
       align: 'right',
-      render: (value) => <strong>{value.toFixed(1)}</strong>
+      render: (value) => <strong>{value.toFixed(2)}</strong>
     },
   ];
   return (
@@ -276,7 +276,7 @@ const App = () => {
                 size="small"
                 footer={() => (
                   <div style={{ textAlign: 'right', fontWeight: 'bold' }}>
-                    Итого: {selectedItem.details.calculation.reduce((sum, item) => sum + item.weighted, 0).toFixed(1)} / 100
+                    Итого: {selectedItem.details.calculation.reduce((sum, item) => sum + item.weighted, 0).toFixed(2)} / 100
                   </div>
                 )}
               />
@@ -287,7 +287,7 @@ const App = () => {
                   <div key={item.criterion} style={{ marginBottom: 12 }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
                       <span>{item.criterion}</span>
-                      <span>{item.weighted.toFixed(1)} из {item.weight}</span>
+                      <span>{item.weighted.toFixed(2)} из {item.weight}</span>
                     </div>
                     <Progress 
                       percent={(item.weighted / item.weight) * 100} 
